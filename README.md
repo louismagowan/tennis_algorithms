@@ -88,16 +88,16 @@ Project Link: [https://github.com/louismagowan/tennis_algorithms](https://github
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/louismagowan/lyrics_analysis.svg?style=for-the-badge
-[contributors-url]: https://github.com/louismagowan/lyrics_analysis/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/louismagowan/lyrics_analysis.svg?style=for-the-badge
-[forks-url]: https://github.com/louismagowan/lyrics_analysis/network/members
-[stars-shield]: https://img.shields.io/github/stars/louismagowan/lyrics_analysis.svg?style=for-the-badge
-[stars-url]: https://github.com/louismagowan/lyrics_analysis/stargazers
-[issues-shield]: https://img.shields.io/github/issues/louismagowan/lyrics_analysis.svg?style=for-the-badge
-[issues-url]: https://github.com/louismagowan/lyrics_analysis/issues
-[license-shield]: https://img.shields.io/github/license/louismagowan/lyrics_analysis.svg?style=for-the-badge
-[license-url]: https://github.com/louismagowan/lyrics_analysis/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/louismagowan/tennis_algorithms.svg?style=for-the-badge
+[contributors-url]: https://github.com/louismagowan/tennis_algorithms/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/louismagowan/tennis_algorithms.svg?style=for-the-badge
+[forks-url]: https://github.com/louismagowan/tennis_algorithms/network/members
+[stars-shield]: https://img.shields.io/github/stars/louismagowan/tennis_algorithms.svg?style=for-the-badge
+[stars-url]: https://github.com/louismagowan/tennis_algorithms/stargazers
+[issues-shield]: https://img.shields.io/github/issues/louismagowan/tennis_algorithms.svg?style=for-the-badge
+[issues-url]: https://github.com/louismagowan/tennis_algorithms/issues
+[license-shield]: https://img.shields.io/github/license/louismagowan/tennis_algorithms.svg?style=for-the-badge
+[license-url]: https://github.com/louismagowan/tennis_algorithms/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/louismagowan/
 [product-screenshot]: images/screenshot.png
