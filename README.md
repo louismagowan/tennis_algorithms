@@ -21,107 +21,34 @@
 
 
 
-<h3 align="center">Song Lyrics Over Time: Lexical Diversity and Sentiment Analysis in R</h3>
-
-  <p align="center">
-    Using Quanteda, IBM Tone Analyzer and ggplot2 to analyse top 100 song lyrics in the US from 1958.
-    <br />
-    <br />
-    <a href="https://datastudio.google.com/reporting/428bdb5c-8375-4566-a013-e8f7a3821256">Data Studio Dashboard</a>
-    ·
-    <a href="https://github.com/louismagowan/lyrics_analysis/issues">Request Feature</a>
-    ·
-    <a href="https://github.com/louismagowan/lyrics_analysis/issues">Report Bug</a>
-  </p>
-</div>
-
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
+<h3 align="center">15 Years of Women's Tennis Data: Algorithmic Analysis in Mostly Base Python</h3>
 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Uses lyrics from [Billboard Top 100 songs](https://www.kaggle.com/dhruvildave/billboard-the-hot-100-songs) from 1958 in the US to do sentiment and lexical diversity analysis. 
-Aims to determine if/how song lyrics have changed over time. Lexical diversity analysis is conducted using the Quanteda package, 
-with the [TTR](https://rdrr.io/cran/koRpus/man/TTR.html) and [Maas](https://rdrr.io/cran/koRpus/man/maas.html) measures.
+In honor of Emma Raducanu's historical achievements in 2021, I look at the results of womens' tennis matches over the period 2007-2021. Your objectives are to parse the data, reconstruct tournament brackets, identify the top players, and implement algorithms to provide an alternative rankings for the players. This was project was completed as part of my [MSc Applied Social Data Science degree](https://www.lse.ac.uk/study-at-lse/Graduate/degree-programmes-2022/MSc-Applied-Social-Data-Science) at LSE.
 
-Sentiment analysis run using [IBM's tone analyser](https://www.ibm.com/uk-en/cloud/watson-tone-analyzer).
+Only fundamental Python data types are used (lists, tuples, dictionaries, numpy.ndarray, etc.) to complete this analysis. Advanced data querying packages and data analysis packages were avoided, in order to further my understanding of fundamental programming concepts.
 
-Songs appear to have become less joyful, angrier and simpler.
+The repository contains fifteen .csv files with match results, one file for each year. Each file contains the following variables:
 
-To analyse / play about with the data yourself, please check out the [Data Studio dashboard](https://datastudio.google.com/reporting/428bdb5c-8375-4566-a013-e8f7a3821256).
+Tournament – the name of the tournament that the match was part of.
+Start date – the date when the tournament starts.
+End date – the date when the tournament ends.
+Best of – 3 means that first player to win 2 sets wins match (all WTA matches are best of 3 sets).
+Player 1, Player 2 – names of the players in the match.
+Rank 1, Rank 2 – WTA ranks of Player 1 and Player 2 before the start of the tournament. Not all players will have a ranking.
+Set 1-3 – result for each set played where the score is shown as: number of games won by Player 1 - number of games won by Player 2. The player that wins the most games in a set wins that set.
+Comment
+Completed means match was played.
+Player retired means that the named player withdrew and the other player won by default.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-### Built With
-
-* [Quanteda](https://quanteda.io/index.html)
-* [Data Studio](https://datastudio.google.com/reporting/428bdb5c-8375-4566-a013-e8f7a3821256)
-* [plotly](https://plotly.com/r/)
-* [httr](https://cran.r-project.org/web/packages/httr/vignettes/quickstart.html)
-* [IBM Tone Analyzer](https://www.ibm.com/uk-en/cloud/watson-tone-analyzer)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-Make sure you've done this setup before you try to run the code yourself.
-
-### Prerequisites
-
-Install Quanteda packages in R environment.
-* R
-  ```r
-  install.packages("quanteda")
-  install.packages("quanteda.textstats")
-  install.packages("quanteda.textmodels")
-  ```
-
-* IBM Cloud Account
-  Create a free IBM Cloud Account and use the $200 USD credit they give you to create a Tone Analyzer instance,
-  if you want to run the sentiment analysis yourself. [IBM Tone Analyzer](https://www.ibm.com/uk-en/cloud/watson-tone-analyzer)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Genre-level analysis
-- [ ] Analysis of more songs, top 100 in other countries
-    - [ ] Country-level comparison
+3 algorithms are used to create rankings (Winners Don't Lose, Winners Win and Winners Beat Winners)- the details for which can be found in the Jupyter Notebook.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
-<!-- CONTRIBUTING -->
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -143,7 +70,7 @@ Don't forget to give the project a star! Thanks again!
 
 LinkedIn- [Louis Magowan](https://www.linkedin.com/in/louismagowan/)
 
-Project Link: [https://github.com/louismagowan/lyrics_analysis](https://github.com/louismagowan/lyrics_analysis)
+Project Link: [https://github.com/louismagowan/tennis_algorithms](https://github.com/louismagowan/tennis_algorithms)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -153,9 +80,7 @@ Project Link: [https://github.com/louismagowan/lyrics_analysis](https://github.c
 ## Acknowledgments
 
 * [othneildrew - README template](https://github.com/othneildrew/Best-README-Template/blob/master/BLANK_README.md)
-* [Group By Decade](https://stackoverflow.com/questions/47799182/grouping-data-in-r-and-summing-by-decade)
-* [Lyrics API](https://api.lyrics.ovh/v1/)
-* [Dhruvil Dave, Billboard Top 100 Songs](https://www.kaggle.com/dhruvildave/billboard-the-hot-100-songs)
+* [LSE Applied Social Data Science](https://www.lse.ac.uk/study-at-lse/Graduate/degree-programmes-2022/MSc-Applied-Social-Data-Science)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
